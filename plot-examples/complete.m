@@ -1,0 +1,12 @@
+x = linspace(1e-4,10*pi); 
+y = sin(x)./x; 
+plot(x,y); 
+xlabel('x'); 
+ylabel('y'); 
+title('Grafico della funzione sinc e della funzione seno'); 
+x1 = linspace(0,10*pi); 
+y1 = sin(x1); 
+hold on; 
+plot(x1,y1,':m'); 
+legend('sinc(x)','sin(x)'); 
+axis([0,10*pi,-1,1]);
