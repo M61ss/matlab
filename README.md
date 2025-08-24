@@ -79,4 +79,23 @@ Inside the current working directory create a file with the `.m` extension. You 
 
 ### Plots
 
-- ``:
+- `plot(x,y,'<options>')`: it plots polyline which connects dots of two given linear spaces x and y. It is possible to provide some options
+- `plot3(x,y,z,'<options>')`: 3D plot
+- `hold on`: it keeps on the previously plotted graphic
+- `hold off`: it disable `hold on`
+- `figure`: opens a graphical window
+- `subplot`: it divides a graphical window in two or more graphical areas. `subplot(n,m,p)` divides the window in n x m graphical areas and next plot will modify p-th area
+- `title('string')`: assign a title to the graphic
+- `xlabel('string')`, `ylabel('string')`: assign a label to axis
+- `legend('string1', 'string2', ...)`: creates a legend
+- `axis([xmin,xmax,ymin,ymax])`: fix extremes of graphic
+- `semilogy`, `semilogx`: sets axis in logarithmic scale
+- `loglog`: sets all axis in logarithmic scale
+- `meshgrid(x,y)`: creates a 2D surface 
+- `mesh(x,y,z)`: creates a 3D surface with colored lines
+- `surf(x,y,z)`: the same of mesh, but it colors also faces
+- `view(angle, height)`: specifies the inizial point of view fo the graphic (default = -37.5, 30)
+- `colorbar`: it shows the colorbar on the side
+- `colormap('<name>')`: it defines the color mapping (default = 'Jet')
+- `contour(x,y,z,v)`: displays level curves. `v` is optional, it gives the possibility to specify which levels to print
+- `imread`, `imshow`, `imwrite`: respectively reads image from a file, visualizes an image and saves an image
