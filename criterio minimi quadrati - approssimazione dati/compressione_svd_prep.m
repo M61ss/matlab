@@ -9,7 +9,7 @@ imagesc(X); axis image; colormap('gray');
 load detail.mat
 figure, imshow(X,[]);
 set(gcf,'Position',[67.4000  372.2000  437.6000  359.2000]);
-[m,n] = size(X)
+[m,n] = size(X);
 %% 
 
 [U,S,V] = svd(X);
@@ -27,4 +27,4 @@ set(gcf,'Position',[979.4000  372.2000  437.6000  359.2000]);
 
 size_compr = m*q+n*q+q;
 fprintf('\n Immagine compressa: %g, rapporto: %g\n',size_compr,size_compr/m/n);
-%% 
+%%
